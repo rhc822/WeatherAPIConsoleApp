@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WeatherAPIConsoleApp.Models
+namespace WeatherAPIConsoleApp
 {
     public class WeatherAPIModels
     {
