@@ -8,7 +8,7 @@ namespace WeatherAPIConsoleApp
 {
     class WeatherAPIView
     {
-        public static async Task DisplayPastSevenDayHighTemps(WeatherAPIModels weatherList)
+        public static async Task DisplayPastSevenDayWeather(WeatherAPIModels weatherList)
         {
             // Data source
             //int[] scores = new int[] { 97, 92, 81, 60 };

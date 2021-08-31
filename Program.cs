@@ -8,9 +8,9 @@ namespace WeatherAPIConsoleApp
         public static async Task Main()
         {
             // Weather API to get past seven day weather
-            var a = await WeatherAPIController.GetPastSevenDayWeather();
+            var weather = await WeatherAPIController.GetPastSevenDayWeather();
 
-            await WeatherAPIView.DisplayPastSevenDayHighTemps(a);
+            await WeatherAPIView.DisplayPastSevenDayWeather(weather);
 
         }
     }
