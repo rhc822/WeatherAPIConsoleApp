@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace WeatherAPIConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        public static async Task Main()
         {
-            Console.WriteLine("Hello World!");
+            // Weather API to get past seven day weather
+            var a = await WeatherAPIController.GetPastSevenDayWeather();
+
+            await WeatherAPIView.DisplayPastSevenDayHighTemps(a);
+
         }
     }
 }
